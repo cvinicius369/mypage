@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Apresentação</title>
+  </head>
+  <body>
+    <style>
+      html, body{ width: 100%; heigth: 100%; margin: 0; padding: 0;
+        background: transparent linear-gradient(170deg, #14c3a2 60%, transparent 100%) 0% 0% no-repeat padding-box; }
+      body{ width: 100%; heigth: 100%; margin: 0; padding: 0;
+        color: black; font-family: monospace; font-size: 20px; font-weight: bold; }
+      #bloco1{ background-color: white; border-radius: 15px; margin: 15%; padding: 5%; }
+      #ID1{ display: flex; margin: 2%;}
+      #ID1 h1{ margin-left: 2%; }
+      #ID1 p{ margin-left: 5%; background-color: #f1ecdf; padding: 5%; border-radius: 15px; }
+      #hyperlinks{ display: inline; }
+      #hyperlinks ul{ list-style: none; display: flex; align-items: inline; }
+      #hyperlinks ul li{ display: inline; margin: 3px; }
+      #curriculo { text-align: center;
+          background-color: black; color: white; font-weight: bold; font-size: 15px; line-height: 30px; height: 28px; width: 100px; }
+      ::selection{ background-color: #14c3a2; color: white; }
+      #ctc {
+        background-color: #00766b; border-radius: 15px; padding: 4%; font-weight: bold; color: white;
+      }
+    </style>
+    <div id="bloco1">
+      <div id="ID1">
+        <div id="ID2">
+          <h1>Olá!</h1><h3>Esta página é uma apresentação sobre mim, sobre minha experiência profissional e academica, além de demonstrar meus hobbys.</h3>
+          <h3 id="ctc">CONTATOS E CURRICULO</h3>
+          <div id="hyperlinks">
+            <ul>
+              <li id="curriculo" onclick="openCURRICULO()">CURRICULO</li>
+              <li onclick="openWPP()"><img loading="lazy" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=279c87&color=black"></li>
+              <li onclick="openGMAIL()"><img loading="lazy" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=red&color=black" target="_blank"></li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          Sobre Mim: <br><br>
+          Me chamo Caio Vinicius de Almeida Faguette, 20 anos, atualmente graduando em engenharia de software,
+          Atualmente estou no 4º semestre cursando na faculdade Anhanguera.<br><br>
+          Estou a 5 anos estudando e criando projetos na área de TI (mais especificamente na área da programação),
+          tenho familiaridade com algumas tecnologias como: <br><br>
+          <img src="https://img.shields.io/badge/-JS-000?&logo=javascript&logoColor=yellow&style=for-the-badge"/>
+          <img src="https://img.shields.io/badge/-HTML-000?&logo=html5&style=for-the-badge"/>
+          <img src="https://img.shields.io/badge/-CSS-000?&logo=css3&logoColor=1572B6&style=for-the-badge"/>
+          <img src="https://img.shields.io/badge/Csharp-00599C?style=for-the-badge&logo=csharp&logoColor=purple&color=black"/>
+          <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=blue&color=black"/>
+          <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=641f5e&color=black"/>
+          <img loading="lazy" src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=279c87&color=black">
+          <br><br>
+        </p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function openWPP(){ open('https://api.whatsapp.com/send/?phone=5562993882350&text&type=phone_number&app_absent=0'); }
+      function openGMAIL(){ open('mailto:vinicius182102@gmail.com'); }
+      function openCURRICULO(){ open('https://github.com/cvinicius369/mypage/blob/main/caio.pdf'); }
+    </script>
+  </body>
+</html>
