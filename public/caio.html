@@ -59,118 +59,32 @@
       function openCSV(){ open('https://github.com/cvinicius369/leitor_csv/tree/main'); }
       function openDATABASE(){ open('https://github.com/cvinicius369/DataBase'); }
       function openRPG(){ open('https://github.com/cvinicius369/A-Sombra-Do-Corvo-RPGTEXT'); }
-    </script>
-    <style>
-      html, body{
-        width: 100%;
-        heigth: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      body{
-        width: 100%;
-        heigth: 100%;
-        margin: 0;
-        padding: 0;
-        background: transparent linear-gradient(170deg, #14c3a2 60%, transparent 100%) 0% 0% no-repeat padding-box;
-        color: black;
-        font-family: monospace;
-        font-size: 20px;
-        font-weight: bold;
-      }
-      #bloco1{
-        background-color: white;
-        border-radius: 15px;
-        margin: 15%;
-        padding: 5%;
-      }
-      #ID1{
-        display: flex;
-        margin: 2%;
-      }
-      #ID1 h1{
-        margin-left: 2%;
-      }
-      #bloco1 p{
-        margin-left: 5%;
-        background-color: #f1ecdf;
-        padding: 5%;
-        border-radius: 15px;
-      }
-      .hyperlinks{
-        display: inline;
-      }
-      .hyperlinks ul{
-        list-style: none;
-        display: flex;
-        align-items: inline;
-      }
-      .hyperlinks li{
-        display: inline;
-        margin: 3px;
-        cursor: pointer;
-        padding: 0;
-      }
-      .hyperlinks li:hover{
-        border: solid #14c3a2;
-        background-color: black;
-        color: white;
-        border-radius: 5px;
-      }
-      .bloco2 {
-        text-align: center;
-        border-radius: 5px;
-        background-color: black;
-        color: white;
-        font-weight: bold;
-        font-size: 15px;
-        line-height: 30px;
-        height: 28px;
-        width: 100px;
-      }
-      ::selection{
-        background-color: #14c3a2;
-        color: white;
-      }
-      .ctc {
-        background: transparent linear-gradient(170deg, #14c3a2 40%, #3384b6 100%) 0% 0% no-repeat padding-box;
-        border-radius: 15px;
-        padding: 2%;
-        font-weight: bold;
-        color: white;
-        align: center;
-      }
-      #iain:hover{
-        background: transparent linear-gradient(180deg, #14c3a2 80%, black 100%) 0% 0% no-repeat padding-box;
-        color: black;
-        transition: 0.1s;
-        border: solid #00766b;
-      }
-      #liblib:hover{
-        background: transparent linear-gradient(180deg, #14c3a2 80%, black 100%) 0% 0% no-repeat padding-box;
-        color: black;
-        transition: 0.1s;
-        border: solid #00766b;
-      }
-      #csv_editor:hover{
-        background: transparent linear-gradient(180deg, #14c3a2 80%, black 100%) 0% 0% no-repeat padding-box;
-        color: black;
-        transition: 0.1s;
-        border: solid #00766b;
-      }
-      #database:hover{
-        background: transparent linear-gradient(180deg, #14c3a2 80%, black 100%) 0% 0% no-repeat padding-box;
-        color: black;
-        transition: 0.1s;
-        border: solid #00766b;
-      }
-      #rpg:hover{
-        background: transparent linear-gradient(180deg, #14c3a2 80%, black 100%) 0% 0% no-repeat padding-box;
-        color: black;
-        transition: 0.1s;
-        border: solid #00766b;
-      }
+</script> <style>
+      html, body{ width: 100%; heigth: 100%; margin: 0; padding: 0; }
+      body{ width: 100%; heigth: 100%; margin: 0; padding: 0; font-weight: bold; font-size: 20px; font-family: monospace;
+        background: transparent linear-gradient(170deg, #14c3a2 60%, transparent 100%) 0% 0% no-repeat padding-box; color: black; }
+      #bloco1{ background-color: white; border-radius: 15px; margin: 15%; padding: 5%; }
+      #ID1{ display: flex; margin: 2%; }
+      #ID1 h1{ margin-left: 2%; }
+      #bloco1 p{ margin-left: 5%; background-color: #f1ecdf; padding: 5%; border-radius: 15px; }
+      .hyperlinks{ display: inline; }
+      .hyperlinks ul{ list-style: none; display: flex; align-items: inline; }
+      .hyperlinks li{ display: inline; margin: 3px; cursor: pointer; padding: 0; }
+      .hyperlinks li:hover{ border: solid #14c3a2; background-color: black; color: white; border-radius: 5px; }
+      .bloco2 { text-align: center; border-radius: 5px; background-color: black; color: white; font-weight: bold; font-size: 15px;
+        line-height: 30px; height: 28px; width: 100px; }
+      ::selection{  background-color: #14c3a2; color: white; }
+      .ctc { background: transparent linear-gradient(170deg, #14c3a2 40%, #3384b6 100%) 0% 0% no-repeat padding-box;
+        border-radius: 15px; padding: 2%; font-weight: bold; color: white; align: center; }
+      #iain:hover{ background: transparent linear-gradient(180deg, #14c3a2 80%, black 100%) 0% 0% no-repeat padding-box;
+        color: black; transition: 0.1s; border: solid #00766b; }
+      #liblib:hover{ background: transparent linear-gradient(180deg, #14c3a2 80%, black 100%) 0% 0% no-repeat padding-box;
+        color: black; transition: 0.1s; border: solid #00766b; }
+      #csv_editor:hover{ background: transparent linear-gradient(180deg, #14c3a2 80%, black 100%) 0% 0% no-repeat padding-box;
+        color: black; transition: 0.1s; border: solid #00766b; }
+      #database:hover{ background: transparent linear-gradient(180deg, #14c3a2 80%, black 100%) 0% 0% no-repeat padding-box;
+        color: black; transition: 0.1s; border: solid #00766b; }
+      #rpg:hover{ background: transparent linear-gradient(180deg, #14c3a2 80%, black 100%) 0% 0% no-repeat padding-box; 
+        color: black; transition: 0.1s; border: solid #00766b; }
       img { border-radius: 5px; } img:hover{ border-radius: 5px; }
-    </style>
-  </body>
-</html>
+</style></body></html>
